@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("..//fonts/Lato-Regular.woff2") format("woff2"), url("..//fonts/Lato-Regular.woff") format("woff"); }
+@font-face {
+  font-family: "CormorantGaramond-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("..//fonts/CormorantGaramond-Regular.woff2") format("woff2"), url("..//fonts/CormorantGaramond-Regular.woff") format("woff"); }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  background: #E5E5E5; }
+
+header {
+  margin: 0 auto;
+  padding: 0 200px;
+  max-width: 1650px;
+  width: 100%;
+  font-family: CormorantGaramond-Regular, sans-serif;
+  display: flex;
+  margin-bottom: 37px; }
+  header .logo {
+    position: relative;
+    left: 0;
+    top: 24px;
+    width: 117px;
+    height: 79px; }
+  header .nav-links {
+    color: #161616;
+    font-size: 20px;
+    line-height: 22px; }
+    header .nav-links ul {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 188px; }
+      header .nav-links ul li {
+        margin-right: 48px; }
+  header .contacts {
+    width: 151px;
+    height: 23px;
+    margin-top: 52px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #B8926B;
+    position: relative;
+    right: 0; }
+  header .contacts:after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: url(../images/icon-call.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 167px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+@import '_fonts.scss';
+@import '_var.scss';
+@import '_animations.scss';
+@import '_mixin.scss';
+@import '_media.scss';
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  background: #E5E5E5;
+}
+header{
+  @include container();
+  font-family: $Garamond;
+  display: flex;
+  margin-bottom: 37px;
+  .logo{
+    position: relative;
+    left: 0;
+    top: 24px;
+    width: 117px;
+    height: 79px;
+  }
+  .nav-links{
+    color: #161616;
+    font-size: 20px;
+    line-height: 22px; 
+    ul{
+      display: flex;
+      margin-top: 50px;
+      margin-left: 188px;
+      li{
+        margin-right: 48px;
+      }
+    }
+  }
+  .contacts{
+    width: 151px;
+    height: 23px;
+    margin-top: 52px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #B8926B;
+    position: relative;
+    right: 0;
+  }
+  .contacts:after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: url(../images/icon-call.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 167px;
+    
+  }
+   
+}
+
